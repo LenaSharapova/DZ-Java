@@ -1,0 +1,87 @@
+
+h1, h2 {
+  display: flex;
+  justify-content: center;
+}
+.container {
+    
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+}
+.links {  
+  font-size: 26px;
+  justify-content: flex-end;
+  color: white;
+}
+
+.dropdownContent {
+  display: none;
+  position: absolute;
+  width: 100px;
+  box-shadow: 0px 8px 10px 0px blueviolet;
+}
+.dropdownContent a {
+  padding: 10px;
+  display: block;
+  text-decoration: none;
+  color: blueviolet;
+}
+.dropdownContent a:hover {
+  background-color: rgb(235, 168, 198);
+}
+
+.main-menu {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+}
+.main-menu li {
+  display: inline-block;
+  position: relative;
+}
+.main-menu a {
+  display: block;
+  padding: 10px;
+}
+.submenu {
+  display: none;
+  position: absolute;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  background: red;
+}
+.submenu li {
+  display: block;
+  padding: 10px;
+}
+
+/* для слайдера */
+#slider-container {
+  position: relative;
+  overflow: hidden;
+  width: 700px;
+  height: 500px;
+}
+.slide {
+  position: absolute;
+  width: 100%;
+}
+.slide img {
+  width: 100%;
+  height: auto;
+}
+#slider-container button {
+  position: absolute;
+  top:50%;
+  padding: 10px;
+  font-size: 16px;
+  cursor: pointer;
+}
+#prevbtn {
+  left: 0;
+}
+#nextbtn {
+  right: 0;
+}
